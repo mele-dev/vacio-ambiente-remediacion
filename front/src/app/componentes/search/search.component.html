@@ -1,0 +1,8 @@
+<input
+  id="searchInput"
+  type="text"
+  placeholder="Search anything u want..."
+  [(ngModel)]="this.searchValue"
+/>
+<button (click)="clickEvent()">Search</button>
+<p>Valor actual {{ this.searchValue }}</p>
