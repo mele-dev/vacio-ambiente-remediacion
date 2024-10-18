@@ -1,12 +1,3 @@
-<p>task works!</p>
-<p *ngIf="!this.task">No existen tareas</p>
-<p *ngIf="this.task">Tarea: {{ this.task | json }}</p>
-
-<p>ifelse</p>
-<p *ngIf="this.task; else noTask"></p>
-<ng-template #noTask> <p>No existen tareas</p> </ng-template>
-
-<p>tercera forma</p>
 @if (this.task()) {
   <p>Tarea: {{ this.task() | json }}</p>
 } @else {
