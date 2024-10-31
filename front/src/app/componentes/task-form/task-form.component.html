@@ -1,0 +1,24 @@
+<h2>Crear tarea</h2>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <label for="nombre">Nombre</label>
+  <input
+    [(ngModel)]="this.nombre"
+    id="nombre"
+    #nombre="ngModel"
+    name="nombre"
+    type="text"
+    required
+  />
+  {{ form.controls["nombre"].value }}
+
+  <label for="duracion">Duracion</label>
+  <input
+    [(ngModel)]="this.duracion"
+    id="duracion"
+    name="duracion"
+    type="number"
+    required
+  />
+
+  <button>botoncito</button>
+</form>
