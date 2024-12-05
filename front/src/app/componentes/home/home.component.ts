@@ -1,13 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { SearchComponent } from '../search/search.component';
-import { TaskComponent } from '../task/task.component';
 import { Task } from '../../interfaces/task';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SearchComponent, TaskComponent],
+  imports: [SearchComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
